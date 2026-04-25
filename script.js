@@ -31,4 +31,4 @@ function calculateBmi(weight, height) {
   let shedegi = weight /(height * height);
   return Math.round(shedegi);
 }
-console.log(calculateBmi(77, 1.80);
+console.log(calculateBmi(77, 1.80));
