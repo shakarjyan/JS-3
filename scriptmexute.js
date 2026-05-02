@@ -25,10 +25,16 @@ function fibonacciGenerator(n) {
     var output = [];
     if (n === 1) { return [0];
   } 
-  else (n === 2) { return [0, 1];
+  else if (n === 2) { return [0, 1];
   } 
-  output = [0, 1];
+  else {
+        output = [0, 1];
   // ახალი ცვლადის შემოტანა გვჭირდება
-  while (output.length n)
+  while (output.length < n) {
+    let newNumber = output[output.length - 1] + output[output.length - 2];
+      output.push(newNumber);
+    }
+    return output;
+  }
 }
 
